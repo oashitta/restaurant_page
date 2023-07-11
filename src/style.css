@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Sansita Swashed", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("./stuffed_croissant.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background-color: #3d4a7a;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+a {
+  margin: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+a:hover {
+  text-shadow: 2px 2px 8px #000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+main h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+main h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  background-color: #c7957b;
+  color: aliceblue;
+  border: none;
+  border-radius: 6px;
+  transform: translate(0px, 5px);
+  transition: 0.3s;
+}
+
+button:hover {
+  width: 180px;
+  height: 50px;
+}
+/* 
+footer {
+  background-color: #3d4a7a;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} */
