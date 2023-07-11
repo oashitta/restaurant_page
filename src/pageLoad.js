@@ -1,5 +1,5 @@
 import { createHtmlElement } from "./helpers";
-import navbar from "./navBar";
+import navbar from "./navbar";
 import "./style.css";
 
 function pageLoad() {
