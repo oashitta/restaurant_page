@@ -8,7 +8,8 @@ function pageLoad() {
 
   const content = createHtmlElement('div', 'content');
   const nav = navbar();
-  const main = createHtmlElement('main', 'home');
+  const main = createHtmlElement('main');
+  const div = createHtmlElement('div', 'home');
   const h2 = createHtmlElement('h2', null, "Welcome to Mot's Bakery");
   const h4 = createHtmlElement(
     'h4',
@@ -19,10 +20,11 @@ function pageLoad() {
   const footer = renderFooter();
 
   content.appendChild(nav);
+  div.appendChild(h2);
+  div.appendChild(h4);
+  div.appendChild(button);
+  main.appendChild(div);
   content.appendChild(main);
-  main.appendChild(h2);
-  main.appendChild(h4);
-  main.appendChild(button);
   content.appendChild(footer);
 
   return content;
