@@ -2,21 +2,20 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: "Sansita Swashed", cursive;
+  height: 100vh;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
   box-sizing: border-box;
-  background-image: url("./stuffed_croissant.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
+#root {
+  height: 100%;
+}
 nav {
   background-color: #3d4a7a;
   height: 60px;
@@ -34,6 +33,7 @@ a {
 
 a:hover {
   text-shadow: 2px 2px 8px #000;
+  cursor: pointer;
 }
 
 main {
@@ -53,6 +53,13 @@ main h4 {
   font-size: 1rem;
 }
 
+.home {
+  background-image: url('./stuffed_croissant.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+}
+
 button {
   width: 150px;
   height: 40px;
@@ -68,12 +75,36 @@ button:hover {
   width: 180px;
   height: 50px;
 }
-/* 
+.menu-content,
+.about-content {
+  background-color: rgb(215, 232, 232);
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid black;
+  padding: 36px;
+}
+
+.about-content {
+  display: flex;
+  text-align: center;
+  padding: 200px;
+  /* height: 100%; */
+}
+
+.about-details {
+}
+
 footer {
   background-color: #3d4a7a;
   height: 48px;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   color: white;
-} */
+}

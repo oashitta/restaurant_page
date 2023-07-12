@@ -1,12 +1,13 @@
-import { createHtmlElement } from "./helpers";
-import "./style.css";
+import { createHtmlElement } from './helpers';
+import './style.css';
 
 function navbar() {
-  const navItems = ["Home", "Menu", "About"];
-  const nav = document.createElement("nav");
+  const navItems = ['Home', 'Menu', 'About'];
+  const nav = document.createElement('nav');
 
   navItems.forEach((item) => {
-    const a = createHtmlElement("a", null, item);
+    const a = createHtmlElement('a', null, item);
+    a.id = item;
     nav.appendChild(a);
   });
 
